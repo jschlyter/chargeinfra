@@ -1,0 +1,96 @@
+# http://magjac.com/graphviz-visual-editor/
+
+strict digraph {
+    ionity [label="IONITY" shape="box"]
+    recharge [label="ReCharge" shape="box"]
+    incharge [label="InCharge" shape="box"]
+    eon [label="E.ON" shape="box" style="filled" fillcolor="lightgreen"]
+    mer [label="MER " shape="box"]
+    tesla [label="Tesla" shape="box" style="filled" fillcolor="lightblue"]
+    fortum [label="Fortum Charge & Drive" shape="box" style="filled" fillcolor="lightgreen"]
+    ufc [label="UFC Sweden" shape="box"]
+    circlek [label="CirkleK" shape="box" style="filled" fillcolor="yellow"]
+    virta [label="Virta" shape="box"]
+
+    se_cha [label="SE*CHA", shape="plain"]
+    se_vat [label="SE*VAT", shape="plain"]
+    se_edr [label="SE*EDR", shape="plain"]
+    se_cnd [label="SE*CND", shape="plain"]
+    se_mer [label="SE*MER", shape="plain"]
+    se_cle [label="SE*CLE", shape="plain"]
+    se_ion [label="SE*ION", shape="plain"]
+    se_ufc [label="SE*UFC", shape="plain"]
+    fi_001 [label="FI*001", shape="plain"]
+    
+    recharge->se_cha
+    incharge->se_vat
+    eon->se_edr
+    fortum->se_cnd
+    mer->se_mer
+    mer->se_cle
+    fortum->se_cnd
+    ufc->se_ufc
+    ionity->se_ion
+    virta->fi_001
+
+    charge4go [label="Charge4Go" shape="hexagon"]
+    plugsurfing [label="Plugsurfing" shape="hexagon"]
+
+    statkraft [label="Statkraft" shape="house" style="filled" fillcolor="lightgreen"]
+    skelleftea [label="Skellefteå Kraft" shape="house" style="filled" fillcolor="lightgreen"]
+    vattenfall [label="Vattenfall" shape="house" style="filled" fillcolor="lightgreen"]
+
+    vw [label="Volkswagen" shape="house" style="filled" fillcolor="lightblue"]
+    ford [label="Ford" shape="house" style="filled" fillcolor="lightblue"]
+    daimler [label="Daimler" shape="house" style="filled" fillcolor="lightblue"]
+    bmw [label="BMW" shape="house" style="filled" fillcolor="lightblue"]
+
+    mcd [label="McDonalds"]
+    max [label="MAX"]
+    okq8 [label="OKQ8" style="filled" fillcolor="yellow"]
+    st1 [label="ST1" style="filled" fillcolor="yellow"]
+    preem [label="Preem" style="filled" fillcolor="yellow"]
+    tovek [label="Toveks Bil"]
+    polestar [label="Polestar" style="filled" fillcolor="lightblue"]
+    porsche [label="Porsche Charging Service" style="filled" fillcolor="lightblue"]
+    elli [label="We Charge" style="filled" fillcolor="lightblue"]
+    mercedes [label="Mercedes Me Charge" style="filled" fillcolor="lightblue"]
+    newmotion [label="Shell Recharge" style="filled" fillcolor="yellow"]
+    easypark [label="EasyPark"]
+
+    ufc->eon
+    skelleftea->okq8
+    polestar->plugsurfing
+    plugsurfing->ionity
+    plugsurfing->mer
+    plugsurfing->recharge
+    charge4go->ionity
+    charge4go->virta
+    vattenfall->incharge
+    statkraft->mer
+    eon->virta
+    okq8->virta
+    tovek->virta
+    fortum->recharge
+    preem->recharge
+    st1->recharge
+    mcd->recharge
+    easypark->recharge
+    vw->ionity
+    ford->ionity
+    daimler->ionity
+    bmw->ionity
+    vattenfall->incharge
+    max->incharge
+    newmotion->recharge
+
+    elli->recharge
+    elli->ionity
+
+    mercedes->recharge
+    mercedes->daimler
+    
+    porsche->vw
+    porsche->virta
+    porsche->mer
+}
