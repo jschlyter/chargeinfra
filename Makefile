@@ -5,7 +5,7 @@ all: $(SVG)
 
 
 %.svg: %.dot
-	dot -Tsvg -o $@ $<
+	circo -Tsvg -o $@ $<
 
 clean:
 	rm -f $(SVG)
