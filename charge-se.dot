@@ -1,15 +1,15 @@
 // render with Graphviz or http://magjac.com/graphviz-visual-editor/
 strict digraph {
-    ionity [label="IONITY" shape="box"]
-    recharge [label="ReCharge" shape="box"]
-    incharge [label="InCharge" shape="box"]
+    ionity [label="IONITY" shape="box" style="filled" fillcolor="darkorange"]
+    recharge [label="ReCharge" shape="box" style="filled" fillcolor="darkorange"]
+    incharge [label="InCharge" shape="box" style="filled" fillcolor="darkorange"]
     eon [label="E.ON" shape="box" style="filled" fillcolor="lightgreen"]
-    mer [label="MER " shape="box"]
+    mer [label="MER " shape="box" style="filled" fillcolor="darkorange"]
     tesla [label="Tesla" shape="box" style="filled" fillcolor="lightblue"]
     fortum [label="Fortum Charge & Drive" shape="box" style="filled" fillcolor="lightgreen"]
     ufc [label="UFC Sweden" shape="box"]
     circlek [label="CirkleK" shape="box" style="filled" fillcolor="yellow"]
-    virta [label="Virta" shape="box"]
+    virta [label="Virta" shape="box" style="filled" fillcolor="darkorange"]
 
     se_cha [label="SE*CHA", shape="plain"]
     se_vat [label="SE*VAT", shape="plain"]
@@ -53,10 +53,10 @@ strict digraph {
     preem [label="Preem" style="filled" fillcolor="yellow"]
     tovek [label="Toveks Bil"]
     polestar [label="Polestar" style="filled" fillcolor="lightblue"]
-    porsche [label="Porsche Charging Service" style="filled" fillcolor="lightblue"]
-    elli [label="We Charge" style="filled" fillcolor="lightblue"]
-    mercedes [label="Mercedes Me Charge" style="filled" fillcolor="lightblue"]
-    newmotion [label="Shell Recharge" style="filled" fillcolor="yellow"]
+    porsche [label="Porsche Charging Service" shape="hexagon" style="filled" fillcolor="lightblue"]
+    elli [label="We Charge" shape="hexagon" style="filled" fillcolor="lightblue"]
+    mercedes [label="Mercedes Me Charge" shape="hexagon" style="filled" fillcolor="lightblue"]
+    newmotion [label="Shell Recharge" shape="hexagon" style="filled" fillcolor="yellow"]
     easypark [label="EasyPark"]
 
     ufc->eon
