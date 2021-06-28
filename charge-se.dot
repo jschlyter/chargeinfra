@@ -38,6 +38,8 @@ strict digraph {
     statkraft [label="Statkraft" shape="house" style="filled" fillcolor="lightgreen"]
     skelleftea [label="Skellefteå Kraft" shape="house" style="filled" fillcolor="lightgreen"]
     vattenfall [label="Vattenfall" shape="house" style="filled" fillcolor="lightgreen"]
+    umea [label="Umeå Energi" style="filled" fillcolor="lightgreen"]
+    goteborgenergi [label="Göteborg Energi" style="filled" fillcolor="lightgreen"]
 
     vw [label="Volkswagen" shape="house" style="filled" fillcolor="lightblue"]
     ford [label="Ford" shape="house" style="filled" fillcolor="lightblue"]
@@ -66,7 +68,9 @@ strict digraph {
     charge4go->ionity
     charge4go->virta
     vattenfall->incharge
+    goteborgenergi->incharge
     statkraft->mer
+    umea->mer
     eon->virta
     okq8->virta
     tovek->virta
