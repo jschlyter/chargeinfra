@@ -1,15 +1,20 @@
 // render with Graphviz or http://magjac.com/graphviz-visual-editor/
 strict digraph {
+
+    # operators
     ionity [label="IONITY" shape="box" style="filled" fillcolor="darkorange"]
     recharge [label="ReCharge" shape="box" style="filled" fillcolor="darkorange"]
     incharge [label="InCharge" shape="box" style="filled" fillcolor="darkorange"]
     eon [label="E.ON" shape="box" style="filled" fillcolor="lightgreen"]
     mer [label="MER " shape="box" style="filled" fillcolor="darkorange"]
+    allego [label="Allego" shape="box" style="filled" fillcolor="darkorange"]
     tesla [label="Tesla" shape="box" style="filled" fillcolor="lightblue"]
     fortum [label="Fortum Charge & Drive" shape="box" style="filled" fillcolor="lightgreen"]
     ufc [label="UFC Sweden" shape="box"]
     circlek [label="CirkleK" shape="box" style="filled" fillcolor="yellow"]
     virta [label="Virta" shape="box" style="filled" fillcolor="darkorange"]
+    evcore [label="EVcore" shape="box" style="filled" fillcolor="darkorange"]
+    parkncharge [label="Park & Charge" shape="box" style="filled" fillcolor="darkorange"]
 
     se_cha [label="SE*CHA", shape="plain"]
     se_vat [label="SE*VAT", shape="plain"]
@@ -19,8 +24,9 @@ strict digraph {
     se_cle [label="SE*CLE", shape="plain"]
     se_ion [label="SE*ION", shape="plain"]
     se_ufc [label="SE*UFC", shape="plain"]
+    se_pcs [label="SE*PCS", shape="plain"]
     fi_001 [label="FI*001", shape="plain"]
-    
+
     recharge->se_cha
     incharge->se_vat
     eon->se_edr
@@ -31,6 +37,7 @@ strict digraph {
     ufc->se_ufc
     ionity->se_ion
     virta->fi_001
+    parkncharge->se_pcs
 
     charge4go [label="Charge4Go" shape="hexagon"]
     plugsurfing [label="Plugsurfing" shape="hexagon"]
@@ -79,6 +86,7 @@ strict digraph {
     st1->recharge
     mcd->recharge
     easypark->recharge
+    easypark->mer
     vw->ionity
     ford->ionity
     daimler->ionity
